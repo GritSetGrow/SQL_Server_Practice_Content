@@ -1,0 +1,46 @@
+-- Create a table for the employee data
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName NVARCHAR(50),
+    LastName NVARCHAR(50),
+    Department NVARCHAR(50),
+    Position NVARCHAR(50),
+    IsManager BIT,
+    Age INT,
+    Salary FLOAT,
+    HireDate DATETIME,
+    TerminationDate DATETIME
+);
+
+-- Insert sample data
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Position, IsManager, Age, Salary, HireDate, TerminationDate)
+VALUES
+    (1, 'John', 'Doe', 'Engineering', 'Software Engineer', 0, 30, 90000.0, '2015-05-15', NULL),
+    (2, 'Jane', 'Smith', 'Engineering', 'Product Manager', 1, 35, 120000.0, '2010-02-10', NULL),
+    (3, 'Mike', 'Johnson', 'Sales', 'Sales Representative', 0, 28, 75000.0, '2018-08-22', NULL),
+    (4, 'Emily', 'Brown', 'Marketing', 'Marketing Specialist', 0, 27, 70000.0, '2019-03-05', NULL),
+    (5, 'Robert', 'Wilson', 'Engineering', 'Software Engineer', 0, 32, 95000.0, '2013-09-17', NULL);
+    (6, 'Sarah', 'Anderson', 'Engineering', 'Software Engineer', 0, 29, 87000.0, '2016-11-28', NULL),
+    (7, 'Michael', 'Lee', 'Sales', 'Sales Manager', 1, 40, 135000.0, '2008-04-03', NULL),
+    (8, 'Olivia', 'Garcia', 'Marketing', 'Marketing Manager', 1, 38, 125000.0, '2011-07-19', NULL),
+    (9, 'Daniel', 'Martinez', 'Engineering', 'Software Engineer', 0, 31, 92000.0, '2014-02-14', NULL),
+    (10, 'Ava', 'Harris', 'Engineering', 'QA Engineer', 0, 26, 72000.0, '2020-09-08', NULL);
+
+
+Question: Calculate the total salary for each department and provide a subtotal for each department category.
+Question: Calculate the total salary for each combination of department and position, providing subtotals for department, position, and the grand total.
+Question: Calculate the total salary for each combination of department and position, providing subtotals for department and position.
+Question: Pivot the average age of employees for each department, showing the department names as columns.
+Question: Rank employees based on their salaries in descending order, without partitioning by department.
+Question: Rank employees based on their salaries within each department in descending order.
+Question: Determine the dense rank of employees based on their salaries in ascending order.
+Question: Ensure that the FirstName and LastName columns cannot contain NULL values. Create a query to list employees with missing first or last names.
+Question: Add a UNIQUE constraint on the EmployeeID column to ensure that no two employees have the same ID. Try inserting a duplicate EmployeeID and catch the error.
+Question: Define a primary key constraint for the EmployeeID column to uniquely identify employees. Verify the constraint.
+Question: Create a new table named Departments with a primary key constraint on the DepartmentID column. Add a FOREIGN KEY constraint on the Department column in the Employees table, referencing the DepartmentID in the Departments table.
+Question: Add a CHECK constraint to ensure that the Salary column in the Employees table is greater than or equal to 0. Try inserting a negative salary value and catch the error.
+Question: Set a default value of 'Unknown' for the Position column in the Employees table. Insert a new employee without specifying a position and verify that the default value is used.
+Question: Create a regular SQL view named EmployeeSummary that shows the first name, last name, department, and position of all employees.
+Question: Create a materialized view named MaterializedEmployeeSummary that stores the average age of employees in each department.
+Question: Create a stored procedure named GetEmployeesByDepartment that takes the department name as a parameter and returns a list of employees in that department.
+
