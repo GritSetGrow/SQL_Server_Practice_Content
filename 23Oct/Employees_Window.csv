@@ -1,0 +1,15 @@
+empid,name,gender,country,salary,deparment
+1,rakesh,male,india,2000,HR
+2,tom,male,india,3000,HR
+3,rohit,male,india,1000,HR
+4,asha,female,india,2000,Payroll
+5,payal,female,india,4000,IT
+6,arav,male,india,3000,IT
+7,angle,female,india,5000,IT
+8,ramu,male,india,3000,IT
+9,rohan,male,india,4000,IT
+10,arti,female,india,1000,Payroll
+11,alka,female,india,2000,Payroll
+12,roshni,female,india,4000,HR
+13,rita,female,india,6000,Payroll
+14,raju,male,india,,HR
