@@ -1,0 +1,12 @@
+CREATE TABLE tb_employees
+(
+	empId int,
+	empName nvarchar(30),
+	skills nvarchar(20),
+	address nvarchar(50),
+)
+
+INSERT INTO tb_employees VALUES (1,'Tom','.net|SQL|Azure','{"city":"Hyderbad","country":"India"}')
+INSERT INTO tb_employees VALUES (2,'Jack','Java|SQL|AWS','{"city":"Banglore","country":"India"}')
+
+SELECT * FORM tb_employees
