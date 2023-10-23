@@ -1,0 +1,78 @@
+Project Title: "Azure Data Factory Dataflow Transformation Project"
+
+Project Description: Azure Data Factory Dataflows to perform a comprehensive range of data transformations on the provided Employee and Department datasets. 
+The project includes tasks for various transformations and guides students through the process of creating, configuring, and executing data transformations in Azure Data Factory.
+
+Project Tasks:
+
+Project Setup and Data Preparation:
+
+Download the provided Employee and Department datasets (employee.csv and department.csv) and upload them to Azure Data Factory.
+Create a new Data Factory project in the Azure portal.
+
+
+Dataflow Creation:
+Create a Dataflow within the Data Factory project.
+Configure the source datasets for the Employee and Department datasets.
+
+
+Transformation 1: Join Operation:
+Use a Join transformation to combine data from the Employee and Department datasets based on the "department_id" column.
+Choose meaningful columns from both datasets to include in the output.
+
+
+Transformation 2: Derived Column:
+Use the Derived Column transformation to calculate a bonus for employees. For example, calculate the bonus as 10% of the employee's salary.
+Include the bonus column in the output.
+
+
+Transformation 3: Conditional Split:
+Create a Conditional Split transformation to categorize employees into High Salary, Medium Salary, and Low Salary groups based on their salary values.
+Configure rules for the categorization.
+
+
+Transformation 4: Window Function:
+Use the Window transformation to calculate running averages of employee salaries over time (e.g., monthly averages) based on the "hire_date" column.
+
+
+Transformation 5: Union:
+Implement a Union transformation to combine data from multiple sources or datasets.
+For instance, combine the Employee and Department data to create a unified dataset.
+
+
+Transformation 6: Lookup:
+Use the Lookup transformation to enrich the Employee dataset with department information from the Department dataset.
+Join data based on the "department_id."
+
+
+Transformation 7: Aggregate:
+Apply an Aggregate transformation to calculate summary statistics or aggregations on specific columns.
+Calculate, for example, the average salary per department.
+
+Transformation 8: Pivot:
+Utilize the Pivot transformation to transform data from a row-based format to a column-based format.
+For example, pivot the data to display salary distribution by department.
+
+
+Transformation 9: Surrogate Key:
+Apply a Surrogate Key transformation to generate unique surrogate keys for records in the Employee dataset.
+These keys can be used for identifying and tracking records.
+
+
+Transformation 10: Filter:
+Use the Filter transformation to select a subset of data based on specific conditions.
+Filter out, for instance, employees hired after a certain date.
+
+
+Transformation 11: Sort:
+Implement a Sort transformation to order data based on one or more columns.
+Sort the dataset based on employee names or hire dates.
+
+
+Transformation 12: AlterRow:
+Utilize the AlterRow transformation to make changes to data based on defined conditions.
+For example, adjust salaries for employees who joined before a certain date.
+
+
+Sink Configuration:
+Add a Sink transformation to save the final transformed data into an Azure Storage location, such as a new set of CSV files.
