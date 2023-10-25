@@ -1,0 +1,7 @@
+employee_id,first_name,last_name,email,phone_number,department_id,hire_date,salary
+101,John,Doe,johndoe@example.com,555-123-4567,1,2020-01-15,60000
+102,Jane,Smith,janesmith@example.com,555-234-5678,2,2019-11-20,55000
+103,Michael,Johnson,michaeljohnson@example.com,555-345-6789,1,2021-03-10,62000
+104,Emily,Williams,emilywilliams@example.com,555-456-7890,3,2022-05-05,58000
+105,David,Brown,davidbrown@example.com,555-567-8901,2,2020-08-15,54000
+106,Sarah,Anderson,sarahanderson@example.com,555-678-9012,1,2022-01-30,61000
